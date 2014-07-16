@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 		uglify: {
 			my_target: {
 				files: {
-					'public/dist/script.min.js': ['public/src/*.js']
+					'public/js/dis/script.min.js': ['public/js/src/*.js']
 				}
 			}
 		},
@@ -12,10 +12,10 @@ module.exports = function(grunt) {
 		sass: {          
 		    dist: {
 		      	options: { 
-		        	style: 'expanded'
+		        	style: 'compressed'
 		      	},
 		      	files: {
-			        'public/scs/style.css': 'public/scss/style.scss'
+			        'public/css/style.css': 'public/scss/style.scss'
 		      	}
 		    }
 		 },
@@ -25,8 +25,8 @@ module.exports = function(grunt) {
 				tasks: ['uglify']
 			},
 			css: {
-				files: ['public/scss/*.css'],
-				tasks: ['cssmin']
+				files: ['public/scss/*.scss'],
+				tasks: ['sass']
 			}
 		},
 

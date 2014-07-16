@@ -12,12 +12,12 @@ $shadow_angle: 3deg;
 	-ms-transform: rotate($deg);
 	transform: rotate($deg);
 }
-@shadow-effect-1 {
+.shadow-effect-1 {
 	-webkit-box-shadow: 0 10px 6px -6px $shadow_color;
 	-moz-box-shadow: 0 10px 6px -6px $shadow_color;
 	box-shadow: 0 10px 6px -6px $shadow_color;
 }
-@shadow-effect-2 {
+.shadow-effect-2 {
 	position: relative;
 	&:before, &:after {
 		z-index 	: -1;
@@ -29,17 +29,17 @@ $shadow_angle: 3deg;
 		top 		: 80%;
 		max-width 	: 300px;
 		background 	: $shadow_color;
-		@include box-shadow(0 15px 10px $shadow_color);
+		@include box-shadow(0, 15px, 10px, $shadow_color);
 		@include transform(-$shadow_angle);
 	}
 	&:after {
 		right: 10px;
-		left: auto
+		left: auto;
 		@include transform($shadow_angle);
 	}
 }
 
-@shadow-effect-3 {
+.shadow-effect-3 {
 	position: relative;
 	&:before {
 		z-index 	: -1;
@@ -51,12 +51,12 @@ $shadow_angle: 3deg;
 		top 		: 80%;
 		max-width 	: 300px;
 		background 	: $shadow_color;
-		@include box-shadow(0 15px 10px $shadow_color);
+		@include box-shadow(0, 15px, 10px, $shadow_color);
 		@include transform(-$shadow_angle);
 	}
 }
 
-@shadow-effect-4 {
+.shadow-effect-4 {
 	position: relative;
 	&:before {
 		z-index 	: -1;
@@ -68,12 +68,12 @@ $shadow_angle: 3deg;
 		top 		: 80%;
 		max-width 	: 300px;
 		background 	: $shadow_color;
-		@include box-shadow(0 15px 10px $shadow_color);
+		@include box-shadow(0, 15px, 10px, $shadow_color);
 		@include transform($shadow_angle);
 	}
 }
 
-@shadow-effect-5 {
+.shadow-effect-5 {
 	position: relative;
 	&:before, &:after {
 		z-index 	: -1;
@@ -85,7 +85,7 @@ $shadow_angle: 3deg;
 		top 		: 80%;
 		max-width 	: 300px;
 		background 	: #777;
-		@include box-shadow(0 35px 20px $shadow_color);
+		@include box-shadow(0, 35px, 20px, $shadow_color);
 		@include transform(-8deg);
 	}
 	&:after {
@@ -97,12 +97,12 @@ $shadow_angle: 3deg;
 
 
 
-@shadow-effect-6 {
+.shadow-effect-6 {
   	position:relative;       
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    .&:before, &:after	{
+    &:before, &:after	{
 		top 	:50%;
 	    bottom 	:0;
 	    left 	:10px;
@@ -120,7 +120,7 @@ $shadow_angle: 3deg;
 }
 
 
-@shadow-effect-7{
+.shadow-effect-7{
   	position:relative;       
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -151,7 +151,7 @@ $shadow_angle: 3deg;
 	}
 }
 
-@shadow-effect-8 {
+.shadow-effect-8 {
 	position: relative;
 	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
