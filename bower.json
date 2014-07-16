@@ -1,0 +1,30 @@
+{
+  "name": "chien-default-web",
+  "version": "0.0.0",
+  "authors": [
+    "chiendezign <chiendezign@gmail.com>"
+  ],
+  "description": "default_web",
+  "main": "index.html",
+  "keywords": [
+    "default"
+  ],
+  "license": "y",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Metro-UI-CSS": "~2.0.23",
+    "bootstrap-sass": "~3.0.2",
+    "fontawesome": "~4.1.0",
+    "jqueryui": "~1.11.0"
+  },
+  "homepage": "https://github.com/chiendezign/chien-dfault-web.git"
+}
